@@ -303,7 +303,6 @@ nav a {
 .activite-marseille {
     display: flex;
     gap: 20px;
-    min-height: 400px;
 }
 
 .card-content-am {
@@ -312,8 +311,9 @@ nav a {
     flex-basis: 33%;
     border-radius: 16px;
     box-shadow: 0 0 8px var(--filter-bg-color);
-    max-width: 200px;
-    min-width: 200px;
+    height: 440px;
+    width: 300px;
+
 }
 
 .card-content-am img {
@@ -376,6 +376,12 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-content-am {    
+        height: 270px;
+        width: 193.5px;
+    
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -424,8 +430,12 @@ footer {
     }
 
     .activite-marseille {
-        display: block;
         flex-direction: column;
         align-items: center;
+    }
+
+    .card-content-am {
+        max-height: 200px;
+        width: 315px;
     }
     }
