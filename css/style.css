@@ -558,10 +558,17 @@ nav a {
 
     .hebergements-and-populaires section {
         background-color: white;
+        border-radius: 0px;
     }
 
     .hebergements-and-populaires > .populaires {
         background-color: var(--main-bg-color);
+    }
+
+    .card-title-am h3 {
+        margin: 9px 0px 0px 20px;
+        height: 0px;
+        align-items: flex-start;
     }
   }
 
