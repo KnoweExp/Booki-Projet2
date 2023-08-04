@@ -21,12 +21,16 @@
   </head>
 
   <body>
+    <!-- Conteneur principal -->
     <div class="main-container">
       <header>
+        <!-- Navigation -->
         <nav class="flex">
+            <!-- Logo -->
           <a class="nav__logo">
             <img src="/images/logo/Booki.png" alt="booki logo" />
           </a>
+          <!-- Liens de navigation -->
           <div class="nav__links">
             <a href="#ancre-hebergements-marseille">Hébergements</a>
             <a href="#ancre-activite-marseille">Activités</a>
@@ -34,19 +38,25 @@
         </nav>
       </header>
       <main>
+        <!-- Section de recherche -->
         <div class="recherche">
           <h1 class="recherche__titre1">
             Trouver votre hébergement pour des vacances de rêve
           </h1>
           <p>En plein centre ville ou en pleine nature</p>
-          <div class="recherche__form-rech">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" placeholder="Marseille, France" />
-            <button>
-              <span class="rech-loupe">Rechercher</span>
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </div>
+          <form action="/votre-page-de-traitement" method="GET">
+            <!-- Formulaire de recherche -->
+            <div class="recherche__form-rech">
+              <i class="fas fa-map-marker-alt"></i>
+              <input type="text" name="lieu" placeholder="Marseille, France" />
+              <button type="submit">
+                <span class="recherche__rech-loupe typography__medium">Rechercher</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+          
+          <!-- Options de filtrage -->
           <div class="recherche__options">
             <h2>Filtres</h2>
             <div class="recherche__filtre-liste">
@@ -69,15 +79,18 @@
             </div>
           </div>
 
+           <!-- Message d'information -->
           <div class="recherche__info-msg">
             <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         </div>
 
+        <!-- Section des hébergements et des plus populaires -->
         <div class="hebergements-and-populaires">
           <section id="ancre-hebergements-marseille" class="hebergements">
-            <h2 class="section-title section-title--bottom">Hébergements à Marseille</h2>
+            <h2 class="section-title typography__large">Hébergements à Marseille</h2>
+            <!-- Liste des hébergements -->
             <div class="hebergements-list">
               <div class="hebergements-item">
                 <img
@@ -155,13 +168,15 @@
                 </p>
               </div>
             </div>
-            <a href="#">Afficher Plus</a>
+            <a class="typography__medium" href="#">Afficher Plus</a>
           </section>
-          <section class="populaires">
+          <!-- Section des plus populaires -->
+          <section class="populaires background-grey">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fas fa-chart-line blue" aria-hidden="true"></i>
             </div>
+            <!-- Liste des plus populaires -->
             <div class="populaires-cards">
               <article class="card">
                 <img
@@ -279,13 +294,13 @@
             </div>
           </section>
         </div>
+
+        <!-- Section des activités à Marseille -->
         <section
-          id="ancre-activite-marseille"
-          class="section-activite-marseille"
-        >
-          <h2 class="section-title section-title--bottom">Activités à Marseille</h2>
+          id="ancre-activite-marseille" >
+        <div class="section-activite-marseille">
+            <h2 class="section-title typography__large">Activités à Marseille</h2>
           <div class="activite-marseille">
-            <div></div>
             <div class="card-content-am">
               <img src="images/activites/reno-laithienne.jpg" alt="bateaux au vieux Port" />
               <div class="card-title-am">
@@ -313,23 +328,26 @@
                 <h3>Notre-Dame-de-la-Garde</h3>
               </div>
             </div>
-          </div>
+        </div>
+          
+        
         </section>
       </main>
+      <!-- Pied de page -->
       <footer>
         <div>
-          <h4>A propos</h4>
+          <h4 class="typography__medium">A propos</h4>
           <p><a href="#">Fonctionnement du site</a></p>
           <p><a href="#">Conditions générales de vente</a></p>
           <p><a href="#">Données et confidentialité</a></p>
         </div>
         <div>
-          <h4>Nos hébergements</h4>
+          <h4 class="typography__medium">Nos hébergements</h4>
           <p><a href="#">Charte qualité</a></p>
           <p><a href="#">Proposer votre hôtel</a></p>
         </div>
         <div>
-          <h4>Assistance</h4>
+          <h4 class="typography__medium">Assistance</h4>
           <p><a href="#">Centre d’aide</a></p>
           <p><a href="#">Nous contacter</a></p>
         </div>
